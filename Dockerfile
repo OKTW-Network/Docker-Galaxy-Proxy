@@ -11,11 +11,11 @@ COPY proxy_files /app/proxy
 
 RUN apt-get update && apt-get install -y wget && \
     wget -O /app/proxy/velocity.jar $VELOCITY_JAR_URL && \
-    chown -R 1000 /app/* && \
-    java -jar velocity.jar
+    java -jar velocity.jar && \
+    chown -R 1000 /app/*
 
 # Run Server
 USER 1000
-EXPOSE 25565
+EXPOSE 25577
 ENTRYPOINT ["bash"]
 CMD ["/app/proxy/start.sh"]

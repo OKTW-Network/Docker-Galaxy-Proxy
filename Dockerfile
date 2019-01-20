@@ -7,12 +7,6 @@ WORKDIR /app/proxy
 
 COPY proxy_files /app/proxy
 
-# Download mcrcon
-RUN apt-get update && apt-get install -y wget && \
-    wget -q -O - "https://github.com/OKTW-Network/mcrcon/releases/download/v0.0.6/mcrcon-0.0.6-linux-x86-64.tar.gz" | tar xz -C /app/control/ mcrcon && \
-    apt-get purge -y wget && \
-    rm -rf /var/lib/apt/lists/*
-
 # Download Velocity
 
 RUN apt-get update && apt-get install -y wget && \

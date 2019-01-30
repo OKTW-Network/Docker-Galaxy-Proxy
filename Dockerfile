@@ -1,4 +1,4 @@
-FROM adoptopenjdk/openjdk8-openj9:slim
+FROM adoptopenjdk/openjdk11:slim
 
 # Env setup
 ENV VELOCITY_JAR_URL=https://ci.velocitypowered.com/job/velocity/55/artifact/proxy/build/libs/velocity-proxy-1.0-SNAPSHOT-all.jar

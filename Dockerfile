@@ -1,4 +1,4 @@
-FROM adoptopenjdk/openjdk11-openj9:slim
+FROM adoptopenjdk/openjdk11-openj9:alpine
 
 # Env setup
 WORKDIR /app/proxy
@@ -12,5 +12,5 @@ ADD --chown=1000 https://ci.velocitypowered.com/job/velocity/59/artifact/proxy/b
 # Run Server
 USER 1000
 EXPOSE 25565
-ENTRYPOINT ["bash"]
-CMD ["/app/proxy/start.sh"]
+ENTRYPOINT ["java"]
+CMD ["-jar", "velocity.jar"]

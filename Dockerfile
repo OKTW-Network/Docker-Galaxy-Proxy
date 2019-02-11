@@ -5,7 +5,7 @@ USER 1000
 WORKDIR /app/proxy
 
 # Copy files
-COPY proxy_files /app/proxy
+COPY --chown=1000 proxy_files /app/proxy
 
 # Download Velocity
 

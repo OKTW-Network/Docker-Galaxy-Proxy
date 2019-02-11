@@ -1,1 +1,0 @@
-docker run --name galaxy-proxy -p 25577:25577 --rm -it docker-galaxy-proxy

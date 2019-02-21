@@ -1,4 +1,4 @@
-FROM adoptopenjdk/openjdk11-openj9:alpine
+FROM openjdk:8-jre-alpine
 
 # Env setup
 USER 1000

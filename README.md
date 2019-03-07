@@ -1,1 +1,1 @@
-# Docker-Galaxy-Proxy
+# Docker-Galaxy-Proxy [![pipeline status](https://gitlab.com/OKTW-Network/Docker-Galaxy-Proxy/badges/master/pipeline.svg)](https://gitlab.com/OKTW-Network/Docker-Galaxy-Proxy)

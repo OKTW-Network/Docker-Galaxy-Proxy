@@ -10,5 +10,4 @@ ADD --chown=1000 https://ci.velocitypowered.com/job/velocity/lastStableBuild/art
 
 # Run Server
 EXPOSE 25565
-ENTRYPOINT ["java"]
-CMD ["-jar", "velocity.jar"]
+CMD ["velocity.jar"]

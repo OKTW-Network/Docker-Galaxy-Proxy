@@ -1,4 +1,4 @@
-FROM openjdk:8-jre-alpine
+FROM gcr.io/distroless/java:11
 
 # Env setup
 USER 1000

@@ -7,6 +7,6 @@ COPY --chown=1000 proxy_files /app
 
 # Run Server
 USER 1000
-WORKDIR /app/proxy
+WORKDIR /app
 EXPOSE 25565
 CMD ["java", "-jar", "velocity.jar"]

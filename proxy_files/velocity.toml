@@ -23,7 +23,7 @@ online-mode = true
 #             you run servers using Minecraft 1.12 or lower.
 # - "modern": Forward player IPs and UUIDs as part of the login process using Velocity's
 #             native forwarding. Only applicable for Minecraft 1.13 or higher.
-player-info-forwarding-mode = "legacy"
+player-info-forwarding-mode = "modern"
 
 # If you are using modern IP forwarding, configure an unique secret here.
 forwarding-secret = "5up3r53cr3t"
